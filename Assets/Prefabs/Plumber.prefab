@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4694535187595427708}
   - component: {fileID: 3204602880716959815}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4170049789147213956}
   - component: {fileID: 6664001485977664700}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,9 +194,9 @@ GameObject:
   - component: {fileID: 3369653202957826773}
   - component: {fileID: 2726510313359961775}
   - component: {fileID: 305933307968978794}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Plumber
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -234,16 +234,16 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 045ccfae2bba2f44cb0872bb3e2c3aef, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &2726510313359961775
 CapsuleCollider2D:
@@ -255,7 +255,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 045ccfae2bba2f44cb0872bb3e2c3aef, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -294,3 +294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df07cb999a6ce0488cdb091f0a1f264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  moveSpeed: 8
+  acceleration: 20
+  deceleration: 30
+  maxJump: 5.5
+  maxJumpTime: 1

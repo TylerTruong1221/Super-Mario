@@ -2228,6 +2228,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2353,6 +2354,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39540d38dba16574d90247c36a2c87db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SideScrolling
 --- !u!1001 &520221548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9276,6 +9289,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 305933307968978794, guid: 27a0517bc9f1ea343861ef73b7e1f719, type: 3}
+      propertyPath: maxJump
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 305933307968978794, guid: 27a0517bc9f1ea343861ef73b7e1f719, type: 3}
+      propertyPath: acceleration
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 305933307968978794, guid: 27a0517bc9f1ea343861ef73b7e1f719, type: 3}
+      propertyPath: deceleration
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1784520054013681987, guid: 27a0517bc9f1ea343861ef73b7e1f719, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -9314,6 +9339,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1784520054013681987, guid: 27a0517bc9f1ea343861ef73b7e1f719, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726510313359961775, guid: 27a0517bc9f1ea343861ef73b7e1f719, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726510313359961775, guid: 27a0517bc9f1ea343861ef73b7e1f719, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726510313359961775, guid: 27a0517bc9f1ea343861ef73b7e1f719, type: 3}
+      propertyPath: m_Offset.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4685050948357908326, guid: 27a0517bc9f1ea343861ef73b7e1f719, type: 3}
