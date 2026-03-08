@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
         moveAction = new InputAction("Move", InputActionType.Value);
         moveAction.AddCompositeBinding("1DAxis").With("Negative", "<Keyboard>/a").With("Positive", "<Keyboard>/d");
         jumpAction = new InputAction("Jump", InputActionType.Value);
-        jumpAction.AddBinding("<Keyboard>/space");
+        jumpAction.AddBinding("<Keyboard>/w");
         cam = Camera.main;
     }
 
@@ -110,6 +110,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // bounce off when colliding w/ enemy
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            if (transform.DotTest(collision.transform, Vector2.down))
+            {
+                velocity.y = JumpForce/ 2f;
+                isJumping = true;
+            }
+        }
         // Transform refers to the Transform component attached to Plumber. Stores position, rotation, and scale. 
         if (collision.gameObject.layer != LayerMask.NameToLayer("PowerUp"))
         {

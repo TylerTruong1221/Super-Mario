@@ -194,6 +194,8 @@ GameObject:
   - component: {fileID: 3369653202957826773}
   - component: {fileID: 2726510313359961775}
   - component: {fileID: 305933307968978794}
+  - component: {fileID: -2129894716435747254}
+  - component: {fileID: -112089814209366694}
   m_Layer: 3
   m_Name: Plumber
   m_TagString: Player
@@ -299,3 +301,31 @@ MonoBehaviour:
   deceleration: 30
   maxJump: 5.5
   maxJumpTime: 1
+--- !u!114 &-2129894716435747254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4685050948357908326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5985f515617f6484fa45699837520d43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  smallRenderer: {fileID: 0}
+  bigRenderer: {fileID: 0}
+--- !u!114 &-112089814209366694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4685050948357908326}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e17e7a63081483cb5b9fe3900ded4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeathAnimation
+  spriteRenderer: {fileID: 0}
+  deadSprite: {fileID: 7150277278125545651, guid: 241b6aa411b184b20ab63539588e41e9, type: 3}
