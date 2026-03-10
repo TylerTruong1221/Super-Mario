@@ -53,6 +53,7 @@
     <Compile Include="Assets\Scripts\BlockHit.cs" />
     <Compile Include="Assets\Scripts\DeathAnimation.cs" />
     <Compile Include="Assets\Scripts\Extensions.cs" />
+    <Compile Include="Assets\Scripts\FlagPole.cs" />
     <Compile Include="Assets\Scripts\BlockItem.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PowerUp.cs" />
