@@ -67,6 +67,6 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Super-Mario.slnx",
+    "dotnet.defaultSolution": "Super Mario.slnx",
     "git.ignoreLimitWarning": true
 }

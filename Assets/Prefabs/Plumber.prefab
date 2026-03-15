@@ -297,9 +297,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 8
-  acceleration: 20
-  deceleration: 30
-  maxJump: 5.5
+  acceleration: 10
+  deceleration: 15
+  maxJump: 4
   maxJumpTime: 1
 --- !u!114 &-2129894716435747254
 MonoBehaviour:
@@ -315,6 +315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player
   smallRenderer: {fileID: 0}
   bigRenderer: {fileID: 0}
+  activeRenderer: {fileID: 0}
 --- !u!114 &-112089814209366694
 MonoBehaviour:
   m_ObjectHideFlags: 0

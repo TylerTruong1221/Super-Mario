@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 8f;
     public float acceleration = 10f;
     public float deceleration = 15f;
-    public float maxJump = 3.5f;
+    public float maxJump = 4f;
     public float maxJumpTime = 1f;
     public float JumpForce => (2f * maxJump) / (maxJumpTime / 2f);
     public float gravity => (-1.7f * maxJump) / Mathf.Pow((maxJumpTime / 2f), 2);

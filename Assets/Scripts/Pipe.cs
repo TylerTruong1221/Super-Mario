@@ -1,18 +1,36 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Pipe : MonoBehaviour
 {
     public Transform connection;
-    public KeyCode enterKeyCode = KeyCode.S;
+    public InputAction downAction;
     public Vector3 enterDirection = Vector3.down;
     public Vector3 exitDirection = Vector3.zero;
+    public bool triggered;
 
+    private void Awake()
+    {
+        downAction = new InputAction("Down", InputActionType.Button);
+        downAction.AddBinding("<Keyboard>/s");
+    }
+
+    private void OnEnable()
+    {
+        downAction.Enable();
+    }
+
+    private void OnDisable()
+    {
+        downAction.Disable();
+    }
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (connection != null && other.CompareTag("Player"))
+        if (!triggered && connection != null && other.CompareTag("Player"))
         {
-            if (Input.GetKey(enterKeyCode) && other.TryGetComponent(out Player player)) {
+            if (downAction.IsPressed() && other.TryGetComponent(out Player player)) {
+                triggered = true;
                 StartCoroutine(Enter(other.transform));
             }
         }
